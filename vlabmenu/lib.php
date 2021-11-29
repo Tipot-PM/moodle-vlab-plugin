@@ -35,7 +35,8 @@ function local_vlabmenu_extend_navigation(global_navigation $navigation) {
     global $PAGE, $CFG;
 	if (has_capability('mod/vlab:config', context_system::instance()))
 	{
-		$vlablinknode = $PAGE->navigation->add(get_string('manageroom', 'local_vlabmenu'), new moodle_url("$CFG->wwwroot/mod/vlab/manage_rooms.php"), navigation_node::TYPE_CONTAINER, null, 'manageroom', new pix_icon('i/settings', ''));		
+		$vlablinknode = $PAGE->navigation->add(get_string('manageroom', 'local_vlabmenu'), new moodle_url("$CFG->wwwroot/mod/vlab/manage_rooms.php"), navigation_node::TYPE_CONTAINER, null, 'manageroom', new pix_icon('i/settings', ''));
+		$vlablinknode->showinflatnavigation = true;		
 	}
 	return true;	
 }

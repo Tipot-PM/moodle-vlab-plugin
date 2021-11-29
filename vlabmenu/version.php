@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2021040602;       // The current module version (Date: YYYYMMDDXX)
+$plugin->version   = 2021040603;       // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2019052002;    // Requires this Moodle version
 $plugin->component = 'local_vlabmenu';
